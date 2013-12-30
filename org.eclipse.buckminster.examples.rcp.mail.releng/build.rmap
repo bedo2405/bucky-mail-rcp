@@ -34,7 +34,7 @@
 		<rm:provider componentTypes="osgi.bundle,eclipse.feature,buckminster"
 			readerType="git">
 			<rm:property key="git.remote.uri"
-				value="https://github.com/bedo2405/mail" />
+				value="https://github.com/bedo2405/bucky-mail-rcp" />
 			<rm:property key="git.auto.fetch" value="true" />
 			<rm:uri format="{0},{1}">
 				<bc:propertyRef key="git.clone.dir" />
