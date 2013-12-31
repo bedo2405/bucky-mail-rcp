@@ -1,2 +1,2 @@
-setpref targetPlatformPath="${target.platform}"
+#setpref targetPlatformPath="${target.platform}"
 resolve "${projects.location}/org.eclipse.buckminster.examples.rcp.mail.releng/build.cquery"
