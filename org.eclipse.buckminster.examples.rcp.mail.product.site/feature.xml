@@ -22,10 +22,6 @@
          version="0.0.0"/>
 
    <includes
-         id="org.eclipse.buckminster.examples.rcp.mail.cloud.product.feature"
-         version="0.0.0"/>
-
-   <includes
          id="org.eclipse.buckminster.examples.rcp.mail.optional.feature"
          version="0.0.0"/>
 
