@@ -8,8 +8,8 @@
 	<rm:property key="eclipse.download" value="http://download.eclipse.org" />
 	<rm:property key="eclipse.target.platform" value="${eclipse.download}/releases/juno" />
 
-	<rm:locator pattern="^org\.eclipse\.buckminster\.examples\.rcp\.mail(?:\..+)?$"
-		searchPathRef="localsources" />
+	<rm:locator pattern="^org\.eclipse\.buckminster\.examples\.rcp\.mail(?:\..+)?$" searchPathRef="localsources" />
+	<rm:locator pattern="^JUnit-4.11.0$" searchPathRef="localsources" />
 
 	<rm:locator searchPathRef="eclipse" />
 
