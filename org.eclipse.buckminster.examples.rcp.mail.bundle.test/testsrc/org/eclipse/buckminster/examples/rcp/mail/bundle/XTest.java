@@ -4,13 +4,13 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
-public class SomethingTest {
+public class XTest {
 
 	@Test
 	public void testGetX() {
-		Something something = new Something();
-		if (!something.getX().equals("X"))
-			fail(something.getX() + " should be X");
+		X x = new X();
+		if (!x.getX().equals("X"))
+			fail(x.getX() + " should be X");
 	}
 
 }
