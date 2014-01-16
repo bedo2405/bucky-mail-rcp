@@ -25,5 +25,6 @@
   <configurations operatingSystem="aix" windowSystem="gtk" architecture="ppc64"/>
   <configurations operatingSystem="aix" windowSystem="gtk" architecture="ppc"/>
   <configurations operatingSystem="hpux" windowSystem="gtk" architecture="ia64_32"/>
+  <configurations operatingSystem="linux" windowSystem="gtk" architecture="ppc"/>
   <customCategories identifier="custom.rcp.components" label="Custom RCP Components" features="//@validationSets[label='main']/@contributions[label='Juno%20RCP']/@repositories.0/@features.2 //@validationSets[label='main']/@contributions[label='Juno%20RCP']/@repositories.0/@features.3 //@validationSets[label='main']/@contributions[label='Juno%20RCP']/@repositories.0/@features.0 //@validationSets[label='main']/@contributions[label='Juno%20RCP']/@repositories.0/@features.1"/>
 </aggregator:Aggregation>
