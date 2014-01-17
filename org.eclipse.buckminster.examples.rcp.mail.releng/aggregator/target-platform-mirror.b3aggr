@@ -7,7 +7,6 @@
         <features name="org.eclipse.rcp.source.feature.group" categories="//@customCategories[identifier='custom.rcp.components']"/>
         <features name="org.eclipse.equinox.executable.feature.group" categories="//@customCategories[identifier='custom.rcp.components']"/>
         <features name="org.eclipse.equinox.p2.user.ui.feature.group" categories="//@customCategories[identifier='custom.rcp.components']"/>
-        <features name="org.eclipse.e4.rcp.source.feature.group" versionRange="1.1.2.v20130130-191718-91FUvGP7GIX2Kgz-z-gvjMvXV1NS"/>
       </repositories>
     </contributions>
   </validationSets>
