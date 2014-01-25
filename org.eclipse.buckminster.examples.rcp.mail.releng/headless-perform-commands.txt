@@ -8,7 +8,16 @@ perform -D target.os=* -D target.ws=* -D target.arch=* org.eclipse.buckminster.e
 # now build the products and zip them
 perform -D target.os=linux -D target.ws=gtk -D target.arch=x86_64 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
 perform -D target.os=linux -D target.ws=gtk -D target.arch=x86 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=linux -D target.ws=gtk -D target.arch=ppc org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=linux -D target.ws=gtk -D target.arch=ppc64 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=linux -D target.ws=gtk -D target.arch=s390 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=linux -D target.ws=gtk -D target.arch=s390x org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=solaris -D target.ws=gtk -D target.arch=x86 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=solaris -D target.ws=gtk -D target.arch=sparc org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
 perform -D target.os=win32 -D target.ws=win32 -D target.arch=x86_64 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
 perform -D target.os=win32 -D target.ws=win32 -D target.arch=x86 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
 perform -D target.os=macosx -D target.ws=cocoa -D target.arch=x86 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
 perform -D target.os=macosx -D target.ws=cocoa -D target.arch=x86_64 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=aix -D target.ws=gtk -D target.arch=ppc org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=aix -D target.ws=gtk -D target.arch=ppc64 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
+perform -D target.os=hpux -D target.ws=gtk -D target.arch=ia64_32 org.eclipse.buckminster.examples.rcp.mail.product.site#create.product.zip
