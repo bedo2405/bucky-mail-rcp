@@ -28,6 +28,8 @@ public class OpenViewAction extends Action {
 		if(window != null) {	
 			try {
 				window.getActivePage().showView(viewId, Integer.toString(instanceNum++), IWorkbenchPage.VIEW_ACTIVATE);
+				new X().getX();
+				new Y().getY();
 			} catch (PartInitException e) {
 				MessageDialog.openError(window.getShell(), "Error", "Error opening view:" + e.getMessage());
 			}

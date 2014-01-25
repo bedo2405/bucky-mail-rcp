@@ -19,10 +19,16 @@
 		</layout>
 	</appender>
 
+	<logger name="org.eclipse.buckminster.examples.rcp.mail.bundle.X" additivity="false">
+		<level value="TRACE" />
+		<appender-ref ref="stdoutAppender" />
+		<appender-ref ref="fileAppender" />
+	</logger>
+
 	<root>
 		<priority value="INFO" />
 		<appender-ref ref="stdoutAppender" />
 		<appender-ref ref="fileAppender" />
 	</root>
 
-</log4j:configuration>
+ </log4j:configuration>
