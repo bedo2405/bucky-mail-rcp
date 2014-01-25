@@ -3,6 +3,8 @@
   <validationSets label="main">
     <contributions label="Juno RCP">
       <repositories location="http://download.eclipse.org/releases/juno">
+        <bundles name="org.junit" versionRange="4.10.0.v4_10_0_v20120426-0900"/>
+        <bundles name="org.apache.log4j" versionRange="1.2.15.v201012070815"/>
         <features name="org.eclipse.rcp.feature.group" categories="//@customCategories[identifier='custom.rcp.components']"/>
         <features name="org.eclipse.rcp.source.feature.group" categories="//@customCategories[identifier='custom.rcp.components']"/>
         <features name="org.eclipse.equinox.executable.feature.group" categories="//@customCategories[identifier='custom.rcp.components']"/>
