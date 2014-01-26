@@ -17,7 +17,7 @@
 				<attribute name="site.tp" />
 			</prerequisites>
 			<products alias="destination" base="${buckminster.output}">
-				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}/" />
+				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}_b${BUILD_NUMBER}/" />
 			</products>
 		</public>
 		<public name="create.product.zip" actor="ant">
@@ -29,7 +29,7 @@
 				<attribute name="create.product" />
 			</prerequisites>
 			<products alias="action.output" base="${buckminster.output}">
-				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}.zip" />
+				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}_b${BUILD_NUMBER}.zip" />
 			</products>
 		</public>
 		<public name="create.cloud.product" actor="ant">
@@ -72,6 +72,20 @@
 				<property key="repository.name" value="Buckminster Mail RCP Example Platform Site" />
 			</properties>
 			<products alias="output" base="${buckminster.output}/site.tp/" />
+		</public>
+		<public name="site.p2.publish" actor="ant">
+			<actorProperties>
+				<property key="buildFile" value="build/publishUpdateSite.ant" />
+				<property key="targets" value="publish.p2" />
+			</actorProperties>
+			<properties>
+				<property key="source" value="${buckminster.output}/site.p2/" />
+				<property key="destination" value="${updatesite.destination}" />
+			</properties>
+			<prerequisites alias="repository">
+				<attribute name="site.p2" />
+			</prerequisites>
+			<products base="${updatesite.destination}" upToDatePolicy="ACTOR" />
 		</public>
 	</actions>
 </cspecExtension>
