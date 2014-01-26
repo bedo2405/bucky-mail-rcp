@@ -1,0 +1,56 @@
+<project> 
+     <pathconvert property="equinox.launcher.jar"> 
+       <first count="1"> 
+         <sort> 
+           <fileset dir="${eclipse.home}/plugins" includes="**/org.eclipse.equinox.launcher_*.jar"/> 
+           <reverse xmlns="antlib:org.apache.tools.ant.types.resources.comparators"> 
+             <date/> 
+           </reverse> 
+         </sort> 
+       </first> 
+     </pathconvert> 
+     
+    <target name="publish.p2"> 
+        <echo message="Source:      ${sp:source}"/>
+        <echo message="Destination: ${sp:destination}"/>
+       <antcall target="mirror.p2.metadata"/>
+       <antcall target="mirror.p2.artifact"/>
+    </target> 
+   
+       <target name="mirror.p2.metadata"> 
+       <java jar="${equinox.launcher.jar}" fork="true" failonerror="true" > 
+            <arg value="-application"/> 
+            <arg value="org.eclipse.equinox.p2.metadata.repository.mirrorApplication"/> 
+            <arg value="-source"/> 
+            <arg value="${sp:source}"/> 
+            <arg value="-destination"/> 
+            <arg value="${sp:destination}"/> 
+            <arg value="-writeMode"/> 
+            <arg value="clean"/>
+       </java>
+    </target> 
+ 
+       <target name="mirror.p2.artifact"> 
+       <java jar="${equinox.launcher.jar}" fork="true" failonerror="true" > 
+            <arg value="-application"/> 
+            <arg value="org.eclipse.equinox.p2.artifact.repository.mirrorApplication"/> 
+            <arg value="-source"/> 
+            <arg value="${sp:source}"/> 
+            <arg value="-destination"/> 
+            <arg value="${sp:destination}"/> 
+            <arg value="-writeMode"/> 
+            <arg value="clean"/>
+       </java>
+    </target> 
+<!--
+       <target name="publish.p2"> 
+        <echo message="Source:      ${source}"/> 
+        <echo message="Destination: ${destination}"/> 
+         
+        <mkdir dir="${destination}"/> 
+        <copy todir="${destination}" preservelastmodified="true"> 
+            <fileset dir="${source}"/> 
+        </copy> 
+       </target> 
+-->
+</project>
