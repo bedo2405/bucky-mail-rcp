@@ -17,7 +17,7 @@
 				<attribute name="site.tp" />
 			</prerequisites>
 			<products alias="destination" base="${buckminster.output}">
-				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}_b${BUILD_NUMBER}/" />
+				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}_b${build.number}/" />
 			</products>
 		</public>
 		<public name="create.product.zip" actor="ant">
