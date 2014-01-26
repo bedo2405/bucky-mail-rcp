@@ -29,7 +29,7 @@
 				<attribute name="create.product" />
 			</prerequisites>
 			<products alias="action.output" base="${buckminster.output}">
-				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}_b${BUILD_NUMBER}.zip" />
+				<path path="BuckyRcpMail.${target.ws}.${target.os}.${target.arch}_b${build.number}.zip" />
 			</products>
 		</public>
 		<public name="create.cloud.product" actor="ant">
@@ -47,7 +47,7 @@
 				<attribute name="site.tp" />
 			</prerequisites>
 			<products alias="destination" base="${buckminster.output}">
-				<path path="BuckyRcpMailCloud.${target.ws}.${target.os}.${target.arch}/" />
+				<path path="BuckyRcpMailCloud.${target.ws}.${target.os}.${target.arch}_b${build.number}/" />
 			</products>
 		</public>
 		<public name="create.cloud.product.zip" actor="ant">
@@ -60,7 +60,7 @@
 			</prerequisites>
 			<products alias="action.output" base="${buckminster.output}">
 				<path
-					path="BuckyRcpMailCloud.${target.ws}.${target.os}.${target.arch}.zip" />
+					path="BuckyRcpMailCloud.${target.ws}.${target.os}.${target.arch}_b${build.number}.zip" />
 			</products>
 		</public>
 		<public name="site.tp" actor="ant">
