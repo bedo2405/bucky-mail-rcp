@@ -74,7 +74,7 @@
 			</properties>
 			<products alias="output" base="${buckminster.output}/site.tp/" />
 		</public>
-<!-- 		<public name="site.p2.publish" actor="ant">
+		<public name="site.p2.publish" actor="ant">
 			<actorProperties>
 				<property key="buildFile" value="build/publish.ant" />
 				<property key="targets" value="publish.p2" />
@@ -85,12 +85,12 @@
 			<products alias="destination" base="${site.p2.destination}"
 				upToDatePolicy="ACTOR" />
 		</public>
- -->	</actions>
+ 	</actions>
 	    
-    <alterActions>  
-        <public name="site.p2">  
-            <products base="${site.p2.destination}/" upToDatePolicy="ACTOR"/>  
-        </public>  
-    </alterActions>
+<!--     <alterActions>   -->
+<!--         <public name="site.p2">   -->
+<!--             <products base="${site.p2.destination}/" upToDatePolicy="ACTOR"/>   -->
+<!--         </public>   -->
+<!--     </alterActions> -->
     
 </cspecExtension>
