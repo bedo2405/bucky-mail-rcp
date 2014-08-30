@@ -1,1 +1,2 @@
 emma -l org.eclipse.buckminster.examples.rcp.mail.bundle.test/launch/JUnitTests.launch -o 'output/junit_result.xml' --stdout --stderr --xml 'output/coverage.xml'
+emma -l org.eclipse.buckminster.examples.rcp.mail.bundle.test/launch/PluginTest.launch -o 'output/junit_result.xml' --stdout --stderr --xml 'output/coverage.xml'
